@@ -10,7 +10,8 @@
 
 <body>
   <br>
-  <h1 id="paper-title">RidgeBuilder: Interactive Authoring of Expressive Ridgeline Plots</h1>
+  <h1 id="paper-title">RidgeBuilder</h1>
+  <p id="paper-subtitle">Interactive Authoring of Expressive Ridgeline Plots</p>
   <p id="abstract">
     Ridgeline plots are frequently used to visualize the evolution or distributions of multiple series using a pile of
     overlapping line, area, or bar charts, highlighting the peak patterns among these series. While the existing
@@ -29,110 +30,186 @@
     Furthermore, the expressiveness of RidgeBuilder are demonstrated with a gallery of ridgeline plots created by our
     tool.
   </p>
-  <p style="text-align: justify; margin-left: 20%; width: 60%; font-size: 24px">
-    <b>RidgeBuilder: Interactive Authoring of Expressive Ridgeline Plots</b>
-    Submitted to <i>Proceedings of IEEE VIS 2024</i>.
-  </p>
   <br>
-  <h1>Usage Senario</h1>
+  <h1 class="cnt-title">Usage Senario</h1>
   <div class="video-container">
-    <video width="640px" height="360px" controls="" onmouseout="this.pause()" onmouseover="this.play()">
+    <video class="video" controls="" onmouseout="this.pause()" onmouseover="this.play()">
       <source src="./imgs/usage senario.mp4" type="video/mp4">
     </video>
   </div>
   <br><br><br>
 
-  <h1>Gallery</h1>
+  <h1 class="cnt-title">Gallery</h1>
   <div id="gallery-container">
-    <div>
-      <div class="big-img-container">
-        <div class="img-container">
-          <a href="./imgs/bicycle flow.jpg" target="_blank">
-            <img width="540px" height="360px" src="./imgs/bicycle flow.jpg" alt="">
-            <p class="img-description" style="width:500px; height:320px">
-              A cyclic ridgeline plot for bicycle flow in summer.
-              <br><br>
-              Bike count per hour of the day for the week, from Monday to Sunday.
-              <br><br>
-              In this urban poem, bicycles weave their melodies. Weekdays crescendo twice: 6:30-8:30 AM, 4:00-7:00 PM—a
-              commuter's duet.
-              Weekends, a softer tempo, with peaks pushed later—a leisurely dance. These rhythmic patterns, both poetic
-              and precise, guide
-              planners in crafting a cityscape that harmonizes with cyclists.
-              <br><br>
-              &#128444; Click for full size image
-            </p>
-          </a>
-        </div>
-        <div class="img-container">
-          <a href="./imgs/population distribution.jpg" target="_blank">
-            <img width="540px" height="360px" src="./imgs/population distribution.jpg" alt="">
-            <p class="img-description" style="width:500px; height:320px">
-              A ridgeline plot for population distribution of the United States.
-              <br><br>
-              This visualization shows the distribution of population in the United States, with Los Angeles, Chicago, Washington, and New York having the largest populations.
-              <br><br>
-              &#128444; Click for full size image
-            </p>
-          </a>
-        </div>
-      </div>
-      <div class="big-img-container">
-        <div class="img-container">
-          <a href="./imgs/winged migration.jpg" target="_blank">
-            <img width="360px" height="360px" src="./imgs/winged migration.jpg" alt="">
-            <p class="img-description" style="width:320px; height:320px">
-              A ridgeline plot for the winged migration of five bird species in Canada
-              <br><br>
-
-              <br><br>
-              &#128444; Click for full size image
-            </p>
-          </a>
-        </div>
-        <div class="img-container">
-          <a href="./imgs/song.jpg" target="_blank">
-            <img width="360px" height="360px" src="./imgs/song.jpg" alt="">
-            <p class="img-description" style="width:320px; height:320px">
-              A ridgeline plot for music listening in each month.
-              <br><br>
-
-              <br><br>
-              &#128444; Click for full size image
-            </p>
-          </a>
-        </div>
-        <div class="img-container">
-          <a href="./imgs/disease fears.jpg" target="_blank">
-            <img width="360px" height="360px" src="./imgs/disease fears.jpg" alt="">
-            <p class="img-description" style="width:320px; height:320px">
-              A ridgeline plot for the timeline of media-inflamed fears.
-              <br><br>
-
-              <br><br>
-              &#128444; Click for full size image
-            </p>
-          </a>
-        </div>
-      </div>
+    <div class="img-container">
+      <a href="./imgs/bicycle flow.jpg" target="_blank">
+        <img width="480px" height="320px" src="./imgs/bicycle flow.jpg" alt="">
+        <p class="img-description" style="width:480px; height:320px">
+          &#128444; Click for full size image
+        </p>
+      </a>
+      <p class="img-r-description">
+        <b class="img-title">Bicycle Flow in Summer</b>
+        <br>
+        <i>A cyclic ridgeline plot visualizing bicycle flow of Washington D.C. station in summer.</i>
+        <br>
+        <br>
+        In this urban poem, bicycles weave their melodies. Weekdays crescendo twice: 6:30-8:30 AM, 4:00-7:00 PM—a
+        commuter's duet.
+        Weekends, a softer tempo, with peaks pushed later—a leisurely dance. These rhythmic patterns, both poetic
+        and precise, guide planners in crafting a cityscape that harmonizes with cyclists.
+        <br>
+        <br>
+        Dataset: <a href="https://www.kaggle.com/datasets/marklvl/bike-sharing-dataset/data?select=hour.csv">https://www.kaggle.com/datasets/marklvl/bike-sharing-dataset/data?select=hour.csv</a>         
+      </p>
     </div>
-    <div>
-      <div class="img-container">
-        <a href="./imgs/trendiest baby names.jpg" target="_blank">
-          <img width="420px" height="720px" src="./imgs/trendiest baby names.jpg" alt="">
-          <p class="img-description" style="width:380px; height:680px">
-            A ridgeline plot for the trendiest female baby names in each year.
-            <br><br>
-            
-            <br><br>
-            &#128444; Click for full size image
-          </p>
-        </a>
-      </div>
+    <div class="img-container">
+      <p class="img-l-description">
+        <b class="img-title">Population Distribution of the United States</b>
+        <br>
+        <i>A geo ridgeline plot visualizing the population distribution of the United States. Being reproduced from the artwork created by J. Cheshire.</i>
+        <br>
+        <br>
+        Dataset: <a href="https://www.kaggle.com/datasets/marklvl/bike-sharing-dataset/data?select=hour.csv">https://www.kaggle.com/datasets/marklvl/bike-sharing-dataset/data?select=hour.csv</a>         
+        <br>
+        Reference: <a href="https://jcheshire.com/featured-maps/population-lines-how-and-why-i-created-it/">https://jcheshire.com/featured-maps/population-lines-how-and-why-i-created-it/</a>
+      </p>
+      <a href="./imgs/population distribution.jpg" target="_blank">
+        <img width="480px" height="320px" src="./imgs/population distribution.jpg" alt="">
+        <p class="img-description" style="width:480px; height:320px">
+          A ridgeline plot for population distribution of the United States.
+          <br><br>
+          This visualization shows the distribution of population in the United States, with Los Angeles, Chicago, Washington, and New York having the largest populations.
+          <br><br>
+          &#128444; Click for full size image
+        </p>
+      </a>
+    </div>
+    
+    <div class="img-container">
+      <a href="./imgs/winged migration.jpg" target="_blank">
+        <img width="480px" height="540px" src="./imgs/winged migration.jpg" alt="">
+        <p class="img-description" style="width:480px; height:540px">
+          A ridgeline plot for the winged migration of five bird species in Canada
+          <br><br>
+
+          <br><br>
+          &#128444; Click for full size image
+        </p>
+      </a>
+      <p class="img-r-description">
+        <b class="img-title">Winged Migration</b>
+        <br>
+        <i>A ridgeline plot visualizing Google Trend of five migration bird species in Canada.</i>
+        <br>
+        <br>
+        
+        <br>
+        Dataset: <a href="./data/canada birds.csv">Google Trend</a>         
+      </p>
+    </div>
+    
+    <div class="img-container">
+      <p class="img-l-description">
+        <b class="img-title">Songs and Sunsets</b>
+        <br>
+        <i>A ridgeline plot visualizing a user's music listening preferences.</i>
+        <br>
+        <br>
+      </p>
+      <a href="./imgs/song.jpg" target="_blank">
+        <img width="480px" height="557px" src="./imgs/song.jpg" alt="">
+        <p class="img-description" style="width:480px; height:557px">
+          A ridgeline plot for music listening in each month.
+          <br><br>
+
+          <br><br>
+          &#128444; Click for full size image
+        </p>
+      </a>
+    </div>
+
+    <div class="img-container">
+      <a href="./imgs/activity.jpg" target="_blank">
+        <img width="480px" height="530px" src="./imgs/activity.jpg" alt="">
+        <p class="img-description" style="width:480px; height:530px">
+          A ridgeline plot for the winged migration of five bird species in Canada
+          <br><br>
+
+          <br><br>
+          &#128444; Click for full size image
+        </p>
+      </a>
+      <p class="img-r-description">
+        <b class="img-title">Going with the Flow or March to the Peak of your own Ridge?</b>
+        <br>
+        <i>A ridgeline plot visualizing the temporal distribution of American activity preferences. Being reproduced from the artwork created by Lindberg.</i>
+        <br>
+        <br>
+        Number of participants throughout the day compared to peak popularity. Note the spiral line reveals 
+        different activity time preference. There are morning-and-evening everyday workouts the midday 
+        hobbies, and the evenings/late nights out.
+        <br>
+        <br>
+        Dataset: <a href="https://www.bls.gov/tus/home.htm">https://www.bls.gov/tus/home.htm</a>
+        <br>
+        Reference: <a href="https://twitter.com/hnrklndbrg/status/883675698300420098">Peak time for sports and leisure #dataviz</a>   
+      </p>
+    </div>
+
+    <div class="img-container">
+      <p class="img-l-description">
+        <b class="img-title">Mountains Out of Molehills</b>
+        <br>
+        <i>A ridgline plot revealing media-inflamed fears of infecious diseases. Being reproduced from the artwork created by David McCandless and Fabio Bergamaschi.</i>
+        <br>
+        <br>
+        Dataset: <a href="https://data.chhs.ca.gov/dataset/infectious-disease">https://data.chhs.ca.gov/dataset/infectious-disease</a>         
+        <br>
+        Reference: <a href="https://informationisbeautiful.net/visualizations/mountains-out-of-molehills/">Mountains Out of Molehills</a>
+      </p>
+      <a href="./imgs/disease fears.jpg" target="_blank">
+        <img width="480px" height="576px" src="./imgs/disease fears.jpg" alt="">
+        <p class="img-description" style="width:480px; height:576px">
+          A ridgeline plot for the timeline of media-inflamed fears. Being reproduced from the artwork created by David McCandless and Fabio Bergamaschi.
+          <br><br>
+
+          <br><br>
+          &#128444; Click for full size image
+        </p>
+      </a>
+    </div>
+
+    <div class="img-container">
+      <a href="./imgs/trendiest baby names.jpg" target="_blank">
+        <img width="480px" height="757px" src="./imgs/trendiest baby names.jpg" alt="">
+        <p class="img-description" style="width:480px; height:757px">
+          A ridgeline plot for the trendiest female baby names in each year. 
+          <br><br>
+          
+          <br><br>
+          &#128444; Click for full size image
+        </p>
+      </a>
+      <p class="img-r-description">
+        <b class="img-title">Trendiest Female Baby Names</b>
+        <br>
+        <i>A ridgeline plot visualizing the trendiest female baby names since 1930, in the U.S. Being reproduced from the artwork created by Nathan Yau.</i>
+        <br>
+        <br>
+        Number of participants throughout the day compared to peak popularity. Note the spiral line reveals 
+        different activity time preference. There are morning-and-evening everyday workouts the midday 
+        hobbies, and the evenings/late nights out.
+        <br>
+        <br>
+        Dataset: <a href="https://www.ssa.gov/oact/babynames/limits.html">https://www.ssa.gov/oact/babynames/limits.html</a> 
+        <br>
+        Reference: <a href="https://flowingdata.com/2022/02/17/trendiest-baby-name-every-year-since-1930-in-the-u-s/">Trendiest baby name every year since 1930, in the U.S.</a>        
+      </p>
     </div>
   </div>
   <br />
-  <p style="text-align: justify; margin-left: 20%; width: 60%; font-size: 24px">
+  <p class="ant">
     <i>The code and dataset will be updated in future</i>
   </p>
 </body>
