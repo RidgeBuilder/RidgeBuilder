@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RidgeBuilder</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <br>
+  <h1 id="paper-title">RidgeBuilder: Interactive Authoring of Expressive Ridgeline Plots</h1>
+  <p id="abstract">
+    Ridgeline plots are frequently used to visualize the evolution or distributions of multiple series using a pile of
+    overlapping line, area, or bar charts, highlighting the peak patterns among these series. While the existing
+    studies have mainly seen ridgeline plots as a type of small multiple visualization, the signature ridge-like
+    patterns in these plots have increasingly attracted graphic designers to create appealing data visualizations
+    based on customized ridgeline plots. However, many authoring tools only support creating basic ridgeline plots and
+    overlook the diverse layouts and styles of these plots. In this paper, we present a comprehensive design space of
+    ridgeline plots by surveying the usages of such plots, specifically focusing on delineating their diverse layouts
+    and expressive styles. Based on this design space, we introduce RidgeBuilder, an intuitive tool that facilitates
+    the fast authoring of expressive ridgeline plots with intuitive interactions and user-friendly recommendations. In
+    particular, we summarize three goals for refining the layout of ridgeline plots and propose an optimization method
+    that automatically generates an optimal order of the series in the plots. The effectiveness of RidgeBuilder is
+    evaluated with a replication study where the participants were asked to recreate the existing complex ridgeline
+    plots, and both qualitative and quantitative results indicate good usability and usefulness. We also evaluate the
+    efficiency and effectiveness of the proposed layout optimization algorithm with anonymized questionnaires.
+    Furthermore, the expressiveness of RidgeBuilder are demonstrated with a gallery of ridgeline plots created by our
+    tool.
+  </p>
+  <p style="text-align: justify; margin-left: 20%; width: 60%; font-size: 24px">
+    <b>RidgeBuilder: Interactive Authoring of Expressive Ridgeline Plots</b>
+    Submitted to <i>Proceedings of IEEE VIS 2024</i>.
+  </p>
+  <br>
+  <h1>Usage Senario</h1>
+  <div class="video-container">
+    <video width="640px" height="360px" controls="" onmouseout="this.pause()" onmouseover="this.play()">
+      <source src="./imgs/usage senario.mp4" type="video/mp4">
+    </video>
+  </div>
+  <br><br><br>
+
+  <h1>Gallery</h1>
+  <div id="gallery-container">
+    <div>
+      <div class="big-img-container">
+        <div class="img-container">
+          <a href="./imgs/bicycle flow.jpg" target="_blank">
+            <img width="540px" height="360px" src="./imgs/bicycle flow.jpg" alt="">
+            <p class="img-description" style="width:500px; height:320px">
+              A cyclic ridgeline plot for bicycle flow in summer.
+              <br><br>
+              Bike count per hour of the day for the week, from Monday to Sunday.
+              <br><br>
+              In this urban poem, bicycles weave their melodies. Weekdays crescendo twice: 6:30-8:30 AM, 4:00-7:00 PM—a
+              commuter's duet.
+              Weekends, a softer tempo, with peaks pushed later—a leisurely dance. These rhythmic patterns, both poetic
+              and precise, guide
+              planners in crafting a cityscape that harmonizes with cyclists.
+              <br><br>
+              &#128444; Click for full size image
+            </p>
+          </a>
+        </div>
+        <div class="img-container">
+          <a href="./imgs/population distribution.jpg" target="_blank">
+            <img width="540px" height="360px" src="./imgs/population distribution.jpg" alt="">
+            <p class="img-description" style="width:500px; height:320px">
+              A ridgeline plot for population distribution of the United States.
+              <br><br>
+              This visualization shows the distribution of population in the United States, with Los Angeles, Chicago, Washington, and New York having the largest populations.
+              <br><br>
+              &#128444; Click for full size image
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="big-img-container">
+        <div class="img-container">
+          <a href="./imgs/winged migration.jpg" target="_blank">
+            <img width="360px" height="360px" src="./imgs/winged migration.jpg" alt="">
+            <p class="img-description" style="width:320px; height:320px">
+              A ridgeline plot for the winged migration of five bird species in Canada
+              <br><br>
+
+              <br><br>
+              &#128444; Click for full size image
+            </p>
+          </a>
+        </div>
+        <div class="img-container">
+          <a href="./imgs/song.jpg" target="_blank">
+            <img width="360px" height="360px" src="./imgs/song.jpg" alt="">
+            <p class="img-description" style="width:320px; height:320px">
+              A ridgeline plot for music listening in each month.
+              <br><br>
+
+              <br><br>
+              &#128444; Click for full size image
+            </p>
+          </a>
+        </div>
+        <div class="img-container">
+          <a href="./imgs/disease fears.jpg" target="_blank">
+            <img width="360px" height="360px" src="./imgs/disease fears.jpg" alt="">
+            <p class="img-description" style="width:320px; height:320px">
+              A ridgeline plot for the timeline of media-inflamed fears.
+              <br><br>
+
+              <br><br>
+              &#128444; Click for full size image
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="img-container">
+        <a href="./imgs/trendiest baby names.jpg" target="_blank">
+          <img width="420px" height="720px" src="./imgs/trendiest baby names.jpg" alt="">
+          <p class="img-description" style="width:380px; height:680px">
+            A ridgeline plot for the trendiest female baby names in each year.
+            <br><br>
+            
+            <br><br>
+            &#128444; Click for full size image
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br />
+  <p style="text-align: justify; margin-left: 20%; width: 60%; font-size: 24px">
+    <i>The code and dataset will be updated in future</i>
+  </p>
+</body>
+
+</html>
