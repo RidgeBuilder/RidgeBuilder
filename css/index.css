@@ -81,3 +81,8 @@ img{
   font-size: 18px;
   margin: auto;
 }
+
+.statistic-container{
+  display: flex;
+  justify-content: space-around;
+}
