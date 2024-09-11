@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: "Roboto";
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 
@@ -83,6 +83,29 @@ img{
 }
 
 .statistic-container{
+  height:250px;
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.statistic-small-container{
+  border-radius: 5px;
+  height:250px;
+  width: 20%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.statistic-small-container2{
+  border-radius: 5px;
+  height:125px;
+  width: 150px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.statistic-box{
   display: flex;
   justify-content: space-around;
+  gap:5px;
+  width: 50%vwS;
 }

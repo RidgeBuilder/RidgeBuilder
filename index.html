@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RidgeBuilder</title>
   <link rel="stylesheet" href="./css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
 </head>
 
 <body>
@@ -38,12 +39,22 @@
     </a>
   </div>
   <h1 class="cnt-title">Statistic</h1>
-  <div class="statistic-container">
-    <a href="./imgs/statistic.jpg" target="_blank">
-      <img  width="100%" src="./imgs/statistic.jpg" alt="">
-    </a>
+  <div class="statistic-box">
+    <div class="statistic-container" id="statistic-element-container" ></div>
+    <div class="statistic-container" id="statistic-layout-container" ></div>
+    <div class="statistic-small-container" id="statistic-style-container" ></div>
+    <div style="display: flex;flex-direction: column;height: 250px;gap:5px;width: '20%';">
+      <div class="statistic-small-container2" id="statistic-embellishment-container" ></div>
+      <div class="statistic-small-container2" id="statistic-composition-container" ></div>
+    </div>
+    
   </div>
-  
+
+  <script type="module" src="./statistic/element_statistic.js"></script>
+  <script type="module" src="./statistic/layout_statistic.js"></script>
+  <script type="module" src="./statistic/style_statistic.js"></script>
+  <script type="module" src="./statistic/embellishment_statistic.js"></script>
+  <script type="module" src="./statistic/composition_statistic.js"></script>
   <br><br><br>
   <h1 class="cnt-title">Usage Senario</h1>
   <div class="video-container">
