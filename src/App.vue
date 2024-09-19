@@ -4,23 +4,19 @@ export default {
   name: 'App',
   components: {
     HeadNavigator
-  },
-  mounted() {
-    if (this.$route.path !== '/') {
-      this.$router.push('/');
-    }
   }
 }
 </script>
 
 <template>
-  <HeadNavigator />
+  <HeadNavigator/>
   <div class="router-view-content">
-    <router-view />
+    <router-view  />
   </div>
 </template>
 
 <style scoped>
+
 .router-view-content {
   display: flex;
   justify-content: center; 
