@@ -1,18 +1,18 @@
 <template>
   <header class="site-header" role="banner">
     <div class="wrapper">
-      <router-link class="site-title" rel="author" to="/">
+      <router-link class="site-title" rel="author" to="/RidgeBuilder">
         <img src="/ridgeIcon.svg" alt="RidgeBuilder" style="width: 32px" />
         RidgeBuilder
       </router-link>
 
       <nav class="site-nav">
         <div class="trigger">
-          <router-link class="page-link" to="/">Home</router-link>
-          <router-link class="page-link" to="/gallery">Gallery</router-link>
-          <router-link class="page-link" to="/designSpace">Design Space</router-link>
-          <router-link class="page-link" to="/about">About</router-link>
-          <router-link class="btn" to="/app" role="button">Launch</router-link>
+          <router-link class="page-link" to="/RidgeBuilder">Home</router-link>
+          <router-link class="page-link" to="/RidgeBuilder/gallery">Gallery</router-link>
+          <router-link class="page-link" to="/RidgeBuilder/designSpace">Design Space</router-link>
+          <router-link class="page-link" to="/RidgeBuilder/about">About</router-link>
+          <router-link class="btn" to="/RidgeBuilder/app" role="button">Launch</router-link>
         </div>
       </nav>
     </div>

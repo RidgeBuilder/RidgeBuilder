@@ -12,43 +12,43 @@ import GalleryCardDetailSongs from '../components/GalleryDetail/GalleryCardDetai
 import GalleryCardDetailTrendiest from '../components/GalleryDetail/GalleryCardDetailTrendiest.vue';
 import GalleryCardDetailWinged from '../components/GalleryDetail/GalleryCardDetailWinged.vue';
 const routes = [
-  { path: '/', component: HomePage },
-  { path: '/gallery', component: GalleryPage },
-  { path: '/designSpace', component: DesignSpacePage },
-  { path: '/about', component: AboutPage },
-  { path: '/app', component: AppLaunchPage },
+  { path: '/RidgeBuilder', component: HomePage },
+  { path: '/RidgeBuilder/gallery', component: GalleryPage },
+  { path: '/RidgeBuilder/designSpace', component: DesignSpacePage },
+  { path: '/RidgeBuilder/about', component: AboutPage },
+  { path: '/RidgeBuilder/app', component: AppLaunchPage },
   {
-    path: '/gallery/:name',
+    path: '/RidgeBuilder/gallery/:name',
     name: 'GalleryCardDetailBicycle',
     component: GalleryCardDetailBicycle
   },
   {
-    path: '/gallery/:name',
+    path: '/RidgeBuilder/gallery/:name',
     name: 'GalleryCardDetailGoing',
     component: GalleryCardDetailGoing
   },
   {
-    path: '/gallery/:name',
+    path: '/RidgeBuilder/gallery/:name',
     name: 'GalleryCardDetailMountains',
     component: GalleryCardDetailMountains
   },
   {
-    path: '/gallery/:name',
+    path: '/RidgeBuilder/gallery/:name',
     name: 'GalleryCardDetailPopulation',
     component: GalleryCardDetailPopulation
   },
   {
-    path: '/gallery/:name',
+    path: '/RidgeBuilder/gallery/:name',
     name: 'GalleryCardDetailSongs',
     component: GalleryCardDetailSongs
   },
   {
-    path: '/gallery/:name',
+    path: '/RidgeBuilder/gallery/:name',
     name: 'GalleryCardDetailTrendiest',
     component: GalleryCardDetailTrendiest
   },
   {
-    path: '/gallery/:name',
+    path: '/RidgeBuilder/gallery/:name',
     name: 'GalleryCardDetailWinged',
     component: GalleryCardDetailWinged
   },
