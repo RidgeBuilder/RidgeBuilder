@@ -2,9 +2,9 @@
     <div class="designspacepage-container">
         <div class="scope-box">
             <h2 class="cnt-title" >Design Space</h2>
-            <a href="/imgs/scope.png" target="_blank">
+            
                 <img width="60%"  src="/imgs/scope.png" alt="">
-              </a>
+            
         </div>
         <div class="dataset-box">
             <h2 class="cnt-title" style="margin-left:10%">DataSet Query</h2>
