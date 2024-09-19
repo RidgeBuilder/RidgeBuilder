@@ -12,43 +12,44 @@ import GalleryCardDetailSongs from '../components/GalleryDetail/GalleryCardDetai
 import GalleryCardDetailTrendiest from '../components/GalleryDetail/GalleryCardDetailTrendiest.vue';
 import GalleryCardDetailWinged from '../components/GalleryDetail/GalleryCardDetailWinged.vue';
 const routes = [
-  { path: '/RidgeBuilder', component: HomePage },
-  { path: '/RidgeBuilder/gallery', component: GalleryPage },
-  { path: '/RidgeBuilder/designSpace', component: DesignSpacePage },
-  { path: '/RidgeBuilder/about', component: AboutPage },
-  { path: '/RidgeBuilder/app', component: AppLaunchPage },
+ 
+  { path: '/', component: HomePage },
+  { path: '/gallery', component: GalleryPage },
+  { path: '/designSpace', component: DesignSpacePage },
+  { path: '/about', component: AboutPage },
+  { path: '/app', component: AppLaunchPage },
   {
-    path: '/RidgeBuilder/gallery/:name',
+    path: '/gallery/:name',
     name: 'GalleryCardDetailBicycle',
     component: GalleryCardDetailBicycle
   },
   {
-    path: '/RidgeBuilder/gallery/:name',
+    path: '/gallery/:name',
     name: 'GalleryCardDetailGoing',
     component: GalleryCardDetailGoing
   },
   {
-    path: '/RidgeBuilder/gallery/:name',
+    path: '/gallery/:name',
     name: 'GalleryCardDetailMountains',
     component: GalleryCardDetailMountains
   },
   {
-    path: '/RidgeBuilder/gallery/:name',
+    path: '/gallery/:name',
     name: 'GalleryCardDetailPopulation',
     component: GalleryCardDetailPopulation
   },
   {
-    path: '/RidgeBuilder/gallery/:name',
+    path: '/gallery/:name',
     name: 'GalleryCardDetailSongs',
     component: GalleryCardDetailSongs
   },
   {
-    path: '/RidgeBuilder/gallery/:name',
+    path: '/gallery/:name',
     name: 'GalleryCardDetailTrendiest',
     component: GalleryCardDetailTrendiest
   },
   {
-    path: '/RidgeBuilder/gallery/:name',
+    path: '/gallery/:name',
     name: 'GalleryCardDetailWinged',
     component: GalleryCardDetailWinged
   },
@@ -56,7 +57,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/RidgeBuilder/'),
   routes,
 });
 
