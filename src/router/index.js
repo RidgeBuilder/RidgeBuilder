@@ -53,6 +53,7 @@ const routes = [
     name: 'GalleryCardDetailWinged',
     component: GalleryCardDetailWinged
   },
+  { path: '/:catchAll(.*)', redirect: '/' }
 
 ];
 
