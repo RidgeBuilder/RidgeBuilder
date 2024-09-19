@@ -156,12 +156,12 @@ export default {
         {
           label: 'X-axis',
           options: [
-            { label: 'Continuous-Time', value: 'continuous-time' },
-            { label: 'Continuous-Ratio', value: 'continuous-ratio' },
-            { label: 'Continuous-Longitude', value: 'continuous-longitude' },
-            { label: 'Discrete-Level', value: 'level' },
-            { label: 'Discrete-Score', value: 'Score' },
-            { label: 'Discrete-Age', value: 'age' },
+            { label: 'Time', value: 'Time' },
+            { label: 'Ratio', value: 'Ratio' },
+            { label: 'Longitude', value: 'Longitude' },
+            { label: 'Level', value: 'level' },
+            { label: 'Score', value: 'Score' },
+            { label: 'Age', value: 'age' },
           ],
         },
         {
@@ -188,10 +188,52 @@ export default {
             { label: 'Circular', value: 'Circular' },
           ],
         },
+        {
+          label: 'Layer',
+          options: [
+            { label: 'Stacked', value: 'Stacked' },
+            { label: 'Overlay', value: 'Overlay' },
+            { label: 'Alternate', value: 'Alternate' },
+            { label: 'Juxtaposed', value: 'Juxtaposed' },
+            { label: 'Separated', value: 'Separated' },
+          ],
+        },
+        {
+          label: 'Order',
+          options: [
+            { label: 'Statistic', value: 'Statistic' },
+            { label: 'Peak', value: 'Peak' },
+            { label: 'Meta', value: 'Meta' },
+           
+          ],
+        },
+        {
+          label: 'Overlap',
+          options: [
+            { label: 'a little', value: 'a little' },
+            { label: 'Moderate', value: 'Moderate' },
+            { label: 'Dense', value: 'Dense' },
+           
+          ],
+        },
       ],
       styleOptions: [
         {
-          label: 'Usage',
+          label: 'ColorUsage',
+          options: [
+            { label: 'Encode Data', value: 'Encode Data' },
+            { label: 'Style', value: 'Style' },
+          ],
+        },
+        {
+          label: 'Border',
+          options: [
+            { label: 'Stroke', value: 'Stroke' },
+            { label: 'Shadow', value: 'Shadow' },
+          ],
+        },
+        {
+          label: 'OpacityUsage',
           options: [
             { label: 'Encode Data', value: 'Encode Data' },
             { label: 'Style', value: 'Style' },
@@ -200,11 +242,18 @@ export default {
       ],
       embellishmentOptions: [
         {
-          label: 'Y-axis',
+          label: 'Background',
           options: [
-            { label: 'Segmented Value', value: 'segmented-value' },
-            { label: 'Category', value: 'category' },
-            { label: 'Identity', value: 'identity' },
+            { label: 'JOY DIVISION album style', value: 'JOY DIVISION album style' },
+            { label: 'Book Style', value: 'Book Style' },
+            { label: 'Ridgeline Style', value: 'Ridgeline Style' },
+          ],
+        },
+        {
+          label: 'Decoration',
+          options: [
+            { label: 'Detailed visualization', value: 'Detailed visualization' },
+           
           ],
         },
       ],
