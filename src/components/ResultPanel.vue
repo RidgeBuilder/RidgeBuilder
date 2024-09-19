@@ -152,7 +152,7 @@ findColumnIndexByGroup(groupName) {
 
     async loadExcelData() {
       try {
-        const response = await fetch('/RidgeBuilder/Design_space_dataset02.xlsx');
+        const response = await fetch(`${import.meta.env.BASE_URL}/Design_space_dataset02.xlsx`);
         const arrayBuffer = await response.arrayBuffer();
         const workbook = XLSX.read(arrayBuffer, { type: 'array' });
         const sheetName = workbook.SheetNames[0];
