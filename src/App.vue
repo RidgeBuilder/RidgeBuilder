@@ -24,7 +24,7 @@ export default {
   display: flex;
   justify-content: center; 
   align-items: center;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 
