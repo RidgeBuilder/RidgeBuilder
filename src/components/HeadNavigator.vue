@@ -2,7 +2,7 @@
   <header class="site-header" role="banner">
     <div class="wrapper">
       <router-link class="site-title" rel="author" to="/">
-        <img src="../assets/ridgeIcon.svg" alt="RidgeBuilder" style="width: 32px" />
+        <img src="/ridgeIcon.svg" alt="RidgeBuilder" style="width: 32px" />
         RidgeBuilder
       </router-link>
 

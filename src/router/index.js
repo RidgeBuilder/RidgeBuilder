@@ -12,7 +12,7 @@ import GalleryCardDetailSongs from '../components/GalleryDetail/GalleryCardDetai
 import GalleryCardDetailTrendiest from '../components/GalleryDetail/GalleryCardDetailTrendiest.vue';
 import GalleryCardDetailWinged from '../components/GalleryDetail/GalleryCardDetailWinged.vue';
 const routes = [
-  { path: '/RidgeBuilder', component: HomePage },
+  { path: '/', component: HomePage },
   { path: '/gallery', component: GalleryPage },
   { path: '/designSpace', component: DesignSpacePage },
   { path: '/about', component: AboutPage },
