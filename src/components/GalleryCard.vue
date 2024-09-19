@@ -2,7 +2,7 @@
     <div class="gallery-card" @mouseover="scrollImage" @mouseleave="resetScroll" @click="goToDetailPage">
       
         <div class="image-wrapper" ref="imageWrapper">
-          <img :src="imageSrc" alt="Gallery Image" class="gallery-img">
+          <img :src="`/RidgeBuilder/${imageSrc}`" alt="Gallery Image" class="gallery-img">
         </div>
     
       <p class="img-r-description">
