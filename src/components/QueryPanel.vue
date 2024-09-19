@@ -107,7 +107,7 @@
       </div>
     </div>
 
-    <!-- 添加按钮 -->
+    
     <div class="button-box">
       <a-button type="primary" @click="emitFilters">Apply Filters</a-button>
     </div>
@@ -238,7 +238,7 @@ export default {
       this.selectedComposition = value;
     },
     emitFilters() {
-      // 创建一个包含类别信息的数据结构
+    
       const elementFilter = this.getFilteredOptions(this.selectedElements, this.elementOptions);
       const elementAxisFilter = this.getFilteredOptions(this.selectedElementAxes, this.elementAxisOptions);
       const elementLayoutFilter = this.getFilteredOptions(this.selectedLayout, this.layoutOptions);
@@ -256,7 +256,7 @@ export default {
       });
     },
     getFilteredOptions(selectedValues, options) {
-      // 生成一个包含选项和其类别的对象
+     
       const result = [];
       options.forEach(group => {
         group.options.forEach(option => {

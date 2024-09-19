@@ -3,11 +3,10 @@
     <h3>Design Space Dataset</h3>
     <table>
       <tbody>
-        <!-- 渲染图片 -->
+     
         <tr v-for="(row, rowIndex) in filteredTableData" :key="rowIndex">
           <td @mouseover="scrollImage(rowIndex)" @mouseleave="resetScroll(rowIndex)">
             <div class="image-container" :ref="'imageWrapper' + rowIndex">
-              <!-- 检查图片是否加载出错 -->
              
                 <img 
                  v-if="!imageErrorMap[rowIndex]"
@@ -35,9 +34,9 @@ export default {
   name: 'ResultPanel',
   data() {
     return {
-      headers: [],      // 保存表头
-      tableData: [],    // 保存表格数据
-      filteredTableData: [], // 保存过滤后的表格数据
+      headers: [],      
+      tableData: [],    
+      filteredTableData: [],
       filters: {
         selectedElements: [],
         selectedElementAxes: [],
@@ -46,15 +45,15 @@ export default {
         selectedEmbellishment: [],
         selectedComposition: [],
       },
-      imageErrorMap: {}, // 用于保存图片错误信息
+      imageErrorMap: {}, 
     };
   },
   created() {
-    // 监听 QueryPanel 发出的筛选项数据
+
     EventBus.on('filterChanged', this.handleFilterChange);
   },
   beforeUnmount() {
-    // 组件销毁时移除监听器，防止内存泄漏
+
     EventBus.off('filterChanged', this.handleFilterChange);
   },
   mounted() {
@@ -63,7 +62,7 @@ export default {
   methods: {
     handleFilterChange(filterData) {
       this.filters = filterData;
-      this.filterTableData(); // 调用过滤数据的方法
+      this.filterTableData(); 
     },
     filterTableData() {
       const filters = [
@@ -76,12 +75,12 @@ export default {
       ];
 
       if (filters.length === 0) {
-        // 如果没有筛选条件，显示所有数据
+       
         this.filteredTableData = this.tableData;
         return;
       }
 
-      // 根据筛选条件过滤数据
+     
       this.filteredTableData = this.tableData.filter(row => {
         return filters.some(filter => {
           const columnIndex = this.findColumnIndexByGroup(filter.group);
@@ -131,7 +130,7 @@ export default {
     },
 
     handleImageError(rowIndex) {
-      // 将对应索引的错误记录到 imageErrorMap
+    
       this.imageErrorMap[rowIndex] = true;
     },
 
@@ -143,9 +142,9 @@ export default {
         const sheetName = workbook.SheetNames[0];
         const worksheet = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1 });
 
-        this.headers = worksheet[1]; // 第一行作为表头
-        this.tableData = worksheet.slice(2); // 剩余的行为数据
-        this.filteredTableData = this.tableData; // 初始化时显示所有数据
+        this.headers = worksheet[1]; 
+        this.tableData = worksheet.slice(2);
+        this.filteredTableData = this.tableData;
       } catch (error) {
         console.error('Error reading excel file:', error);
       }
