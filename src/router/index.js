@@ -4,15 +4,15 @@ import GalleryPage from '../components/GalleryPage.vue';
 import DesignSpacePage from '../components/DesignSpacePage.vue';
 import AboutPage from '../components/AboutPage.vue';
 import AppLaunchPage from '../components/LaunchPage.vue';
-import GalleryCardDetailBicycle from '@/components/GalleryDetail/GalleryCardDetailBicycle.vue';
-import GalleryCardDetailGoing from '@/components/GalleryDetail/GalleryCardDetailGoing.vue';
-import GalleryCardDetailMountains from '@/components/GalleryDetail/GalleryCardDetailMountains.vue';
-import GalleryCardDetailPopulation from '@/components/GalleryDetail/GalleryCardDetailPopulation.vue';
-import GalleryCardDetailSongs from '@/components/GalleryDetail/GalleryCardDetailSongs.vue';
-import GalleryCardDetailTrendiest from '@/components/GalleryDetail/GalleryCardDetailTrendiest.vue';
-import GalleryCardDetailWinged from '@/components/GalleryDetail/GalleryCardDetailWinged.vue';
+import GalleryCardDetailBicycle from '../components/GalleryDetail/GalleryCardDetailBicycle.vue';
+import GalleryCardDetailGoing from '../components/GalleryDetail/GalleryCardDetailGoing.vue';
+import GalleryCardDetailMountains from '../components/GalleryDetail/GalleryCardDetailMountains.vue';
+import GalleryCardDetailPopulation from '../components/GalleryDetail/GalleryCardDetailPopulation.vue';
+import GalleryCardDetailSongs from '../components/GalleryDetail/GalleryCardDetailSongs.vue';
+import GalleryCardDetailTrendiest from '../components/GalleryDetail/GalleryCardDetailTrendiest.vue';
+import GalleryCardDetailWinged from '../components/GalleryDetail/GalleryCardDetailWinged.vue';
 const routes = [
-  { path: '/', component: HomePage },
+  { path: '/RidgeBuilder', component: HomePage },
   { path: '/gallery', component: GalleryPage },
   { path: '/designSpace', component: DesignSpacePage },
   { path: '/about', component: AboutPage },

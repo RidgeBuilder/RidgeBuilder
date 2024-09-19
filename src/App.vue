@@ -1,16 +1,5 @@
-<template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <HeadNavigator/>
-  <div class="router-view-content">
-    <router-view  />
-  </div>
-  
-</template>
-
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import HeadNavigator from './components/HeadNavigator.vue';
-
 export default {
   name: 'App',
   components: {
@@ -19,13 +8,19 @@ export default {
 }
 </script>
 
+<template>
+  <HeadNavigator/>
+  <div class="router-view-content">
+    <router-view  />
+  </div>
+</template>
+
 <style scoped>
+
 .router-view-content {
   display: flex;
   justify-content: center; 
   align-items: center;
-  margin-top: 2%;
+  margin-top: 3%;
 }
-
-
 </style>
