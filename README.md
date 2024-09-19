@@ -1,5 +1,4 @@
 https://ridgebuilder.github.io/RidgeBuilder/
-# ridgebuilderweb
 
 ## Project setup
 ```

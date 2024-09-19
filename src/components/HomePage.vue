@@ -33,7 +33,7 @@
         <div class="video-container">
             
             <video class="video" controls >
-                <source src="../assets/usage senario.mp4" type="video/mp4">
+                <source src="/usage_senario.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             <h4>Usage Senario</h4>
