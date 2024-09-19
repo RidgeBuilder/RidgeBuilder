@@ -116,7 +116,7 @@
 
 <script>
 import { Select, SelectOptGroup, SelectOption, Button } from 'ant-design-vue';
-import { EventBus } from '@/eventBus';
+import { EventBus } from '../eventBus';
 
 export default {
   name: 'QueryPanel',

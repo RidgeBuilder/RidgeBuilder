@@ -28,7 +28,7 @@
 
 <script>
 import * as XLSX from 'xlsx';
-import { EventBus } from '@/eventBus';
+import { EventBus } from '../eventBus';
 
 export default {
   name: 'ResultPanel',
