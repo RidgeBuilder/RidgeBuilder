@@ -3,7 +3,7 @@
         <h2 class="cnt-title" style="align-self:flex-start;margin-left:7%;margin-top:5%">Gallery</h2>
         <div class="gallerycard-container">
             <GalleryCard
-                imageSrc="/imgs/bicycle_flow.jpg"
+                imageSrc="/RidgeBuilder/imgs/bicycle_flow.jpg"
                 galleryName="Bicycle Flow in Summer"
             />
             <GalleryCard
