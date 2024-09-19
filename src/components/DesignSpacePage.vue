@@ -49,8 +49,8 @@ import ResultPanel from './ResultPanel.vue';
     flex-direction: column;
     align-items: flex-start;
     width:100%;
-    margin-top: 2%;
-    background-color: rgb(102, 102, 102);
+    margin-top: 1%;
+    background-color: #E2E2E2;
     padding-bottom: 2%;
   }
   .dataset-box{
@@ -59,7 +59,7 @@ import ResultPanel from './ResultPanel.vue';
     align-items: flex-start;
     width:100%;
     padding-top: 1%;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 2%;
   }
 
@@ -68,17 +68,20 @@ import ResultPanel from './ResultPanel.vue';
     width:80%;
     margin-left: 10%;
     gap:2%;
+    
   }
   .query-panel{
     background-color: white;
     width: 50%;
     height: 600px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
   }
   .result-panel{
     background-color: white;
     width: 50%;
     height: 600px;
     overflow-y: scroll;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
   }
   </style>
   

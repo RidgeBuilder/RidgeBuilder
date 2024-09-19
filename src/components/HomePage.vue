@@ -58,7 +58,7 @@
   
   <style scoped>
   .homepage-container{
-    background-color:rgba(0, 0, 0, 0.2) ;
+    background-color:#ffffff ;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -112,8 +112,8 @@
 
   .abstract-container{
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.7) ;
-    color: #ffffff;
+    background-color:#E2E2E2 ;
+    color: #000000;
     display: flex;
     gap:5%;
     padding-bottom: 5%;

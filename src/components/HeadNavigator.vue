@@ -31,7 +31,7 @@ export default {
   display: flex;
   min-height: 54px;
   line-height: 54px;
-  background: #616060;
+  background: #848788;
   color: white;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -49,7 +49,7 @@ export default {
   .site-title:hover {
     text-decoration: none; }
   .site-title, .site-title:visited {
-    color: #dadada; }
+    color: #ffffff; }
   .site-title img {
     height: 32px;
     padding: 11px 0;
@@ -68,9 +68,9 @@ export default {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 0;
-    color: #dadada;
+    color: #fffefe;
     text-decoration: none;
-    border-bottom: 2px solid #616060;
+    border-bottom: 2px solid #848788;
     vertical-align: top;
     transition: border-color 0.1s linear; }
     .site-nav .page-link:not(:last-child) {
@@ -79,7 +79,7 @@ export default {
       border-bottom: 2px solid white; }
   @media screen and (max-width: 600px) {
     .site-nav {
-      background: #616060;
+      background: #848788;
       text-align: left;
       border-color: #676767;
       min-height: auto; }
