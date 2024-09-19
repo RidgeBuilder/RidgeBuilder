@@ -10,7 +10,7 @@
              
                 <img 
                  v-if="!imageErrorMap[rowIndex]"
-                  :src="`/RidgeBuilder/${row[0]}`" 
+                  :src="`/RidgeBuilder${row[0]}`" 
                   alt="Image" 
                   @error="handleImageError(rowIndex)" />
              
