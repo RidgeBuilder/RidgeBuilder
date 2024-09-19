@@ -65,50 +65,66 @@ export default {
       this.filterTableData(); 
     },
     filterTableData() {
-      const filters = [
-        ...this.filters.selectedElements,
-        ...this.filters.selectedElementAxes,
-        ...this.filters.selectedLayout,
-        ...this.filters.selectedStyle,
-        ...this.filters.selectedEmbellishment,
-        ...this.filters.selectedComposition
-      ];
+  const filters = [
+    ...this.filters.selectedElements,
+    ...this.filters.selectedElementAxes,
+    ...this.filters.selectedLayout,
+    ...this.filters.selectedStyle,
+    ...this.filters.selectedEmbellishment,
+    ...this.filters.selectedComposition
+  ];
 
-      if (filters.length === 0) {
-       
-        this.filteredTableData = this.tableData;
-        return;
-      }
+  if (filters.length === 0) {
 
-     
-      this.filteredTableData = this.tableData.filter(row => {
-        return filters.some(filter => {
-          const columnIndex = this.findColumnIndexByGroup(filter.group);
-          return columnIndex === -1 || this.matchByGroup(row, columnIndex, filter.group);
-        });
-      });
-    },
-    
-    matchByGroup(row, columnIndex, group) {
-      const groupFilters = this.getFiltersByGroup(group);
-      return groupFilters.some(filter => row[columnIndex].toLowerCase().includes(filter.label.toLowerCase()));
-    },
-    
-    getFiltersByGroup(groupName) {
-      return [
-        ...this.filters.selectedElements,
-        ...this.filters.selectedElementAxes,
-        ...this.filters.selectedLayout,
-        ...this.filters.selectedStyle,
-        ...this.filters.selectedEmbellishment,
-        ...this.filters.selectedComposition
-      ].filter(filter => filter.group.toLowerCase() === groupName.toLowerCase());
-    },
+    this.filteredTableData = this.tableData;
+    return;
+  }
 
-    findColumnIndexByGroup(groupName) {
-      return this.headers.findIndex(header => header.toLowerCase() === groupName.toLowerCase());
-    },
 
+  const groupedFilters = this.groupFiltersByGroup(filters);
+
+  this.filteredTableData = this.tableData.filter(row => {
+
+    return Object.keys(groupedFilters).every(groupName => {
+      const columnIndex = this.findColumnIndexByGroup(groupName);
+      return columnIndex === -1 || this.matchByGroup(row, columnIndex, groupName);
+    });
+  });
+},
+
+
+matchByGroup(row, columnIndex, group) {
+  const groupFilters = this.getFiltersByGroup(group);
+  return groupFilters.some(filter => row[columnIndex].toLowerCase().includes(filter.label.toLowerCase()));
+},
+
+getFiltersByGroup(groupName) {
+  return [
+    ...this.filters.selectedElements,
+    ...this.filters.selectedElementAxes,
+    ...this.filters.selectedLayout,
+    ...this.filters.selectedStyle,
+    ...this.filters.selectedEmbellishment,
+    ...this.filters.selectedComposition
+  ].filter(filter => filter.group.toLowerCase() === groupName.toLowerCase());
+},
+
+
+groupFiltersByGroup(filters) {
+  return filters.reduce((acc, filter) => {
+    const group = filter.group.toLowerCase();
+    if (!acc[group]) {
+      acc[group] = [];
+    }
+    acc[group].push(filter);
+    return acc;
+  }, {});
+},
+
+findColumnIndexByGroup(groupName) {
+  return this.headers.findIndex(header => header.toLowerCase() === groupName.toLowerCase());
+}
+,
     scrollImage(rowIndex) {
       const imageWrapper = this.$refs['imageWrapper' + rowIndex][0]; 
       if (imageWrapper) {
