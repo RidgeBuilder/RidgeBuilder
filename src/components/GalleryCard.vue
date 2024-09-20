@@ -25,27 +25,27 @@
       }
     },
     methods: {
-      // 鼠标悬浮时滚动到图片底部
+      
       scrollImage() {
         const imageWrapper = this.$refs.imageWrapper;
         imageWrapper.scrollTo({
-          top: imageWrapper.scrollHeight, // 滚动到图片容器的底部
-          behavior: 'smooth' // 平滑滚动
+          top: imageWrapper.scrollHeight, 
+          behavior: 'smooth'
         });
       },
-      // 鼠标移出时恢复到顶部
+ 
       resetScroll() {
         const imageWrapper = this.$refs.imageWrapper;
         imageWrapper.scrollTo({
-          top: 0, // 恢复滚动到顶部
+          top: 0, 
           behavior: 'smooth'
         });
       },
       goToDetailPage() {
-      const name = this.galleryName.includes(" ")? this.galleryName.split(" ")[0]:this.galleryName; // 获取名称中的第一部分
+      const name = this.galleryName.includes(" ")? this.galleryName.split(" ")[0]:this.galleryName; 
       this.$router.push({ 
-        name: `GalleryCardDetail${name}`, // 路由的名字应是固定的
-        params: { name } // 通过 params 传递 name 参数
+        name: `GalleryCardDetail${name}`, 
+        params: { name } 
       });
     }}
   }
@@ -59,21 +59,21 @@
     margin: 10px;
     display: flex;
     flex-direction: column;
-    height: 350px; /* 固定卡片高度 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    height: 350px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
     position: relative;
     border: 1px solid rgb(212, 212, 212);
     cursor: pointer;
   }
   .gallery-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2); /* 鼠标悬浮时增加阴影效果 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2); 
   }
 
   .image-wrapper {
-    height: 280px; /* 图片容器的初始高度 */
-    overflow-y: hidden; /* 超出的部分隐藏 */
-    scroll-behavior: smooth; /* 平滑滚动 */
+    height: 280px; 
+    overflow-y: hidden; 
+    scroll-behavior: smooth; 
   }
   
   .gallery-img {

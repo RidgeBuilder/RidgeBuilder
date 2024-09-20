@@ -8,8 +8,7 @@
 export default {
   name: 'AppLaunchPage',
   mounted() {
-    // Redirect to the desired URL when the component is mounted
-    window.location.href = 'https://ridge-builder-app.vercel.app/'; // Replace with your target URL
+    window.location.href = 'https://ridge-builder-app.vercel.app/';
   }
 }
 </script>

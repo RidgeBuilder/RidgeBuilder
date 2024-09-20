@@ -6,7 +6,6 @@
         <tr v-for="(row, rowIndex) in filteredTableData" :key="rowIndex">
           <td @mouseover="scrollImage(rowIndex)" @mouseleave="resetScroll(rowIndex)">
             <div class="image-container" :ref="'imageWrapper' + rowIndex">
-              <!-- 显示 loading 字样，直到图片加载完成 -->
               
               <img 
                 v-if="!imageErrorMap[rowIndex] " 
@@ -46,7 +45,7 @@ export default {
         selectedComposition: [],
       },
       imageErrorMap: {}, 
-      imageLoadingMap: {}, // 追踪图片加载状态
+      imageLoadingMap: {}, 
     };
   },
   created() {
