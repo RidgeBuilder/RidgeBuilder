@@ -1,6 +1,6 @@
 <template>
   <div class="querypanel-box">
-    <h5>Filters</h5>
+    <h3 style="margin-left:2%">Filters</h3>
     <div class="eachScope-box">
       <!-- Element Filter -->
       <div class="filter-box">
@@ -108,8 +108,8 @@
     </div>
 
     
-    <div class="button-box">
-      <a-button type="primary" @click="emitFilters">Apply Filters</a-button>
+    <div class="button-box" style="margin-left:2%">
+      <a-button class="btn-apply" type="primary" @click="emitFilters" style="border-radius: 2px">Apply Filters</a-button>
     </div>
   </div>
 </template>
@@ -256,6 +256,18 @@ export default {
            
           ],
         },
+        {
+          label: 'Annotation',
+          options: [
+            { label: 'Title', value: 'Title' },
+            { label: 'Introduction', value: 'Introduction' },
+            { label: 'Label', value: 'Label' },
+            { label: 'Marker', value: 'Marker' },
+            { label: 'Description', value: 'Description' },
+            { label: 'Illustration', value: 'Illustration' },
+           
+          ],
+        },
       ],
       compositionOptions: [
         {label:'composition',
@@ -355,4 +367,16 @@ h6 {
 .button-box {
   margin-top: 16px;
 }
+
+.btn-apply:hover {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  background-color: #50A24F;
+  text-decoration: none; }
+.btn-apply{
+  outline: none;
+  background-color:#50A24F;
+  text-decoration: none; }
+
+
 </style>

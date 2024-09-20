@@ -90,7 +90,12 @@ export default {
 
     matchByGroup(row, columnIndex, group) {
       const groupFilters = this.getFiltersByGroup(group);
-      return groupFilters.some(filter => row[columnIndex].toLowerCase().includes(filter.label.toLowerCase()));
+      if(row[columnIndex]==undefined){
+        return null;
+      }else{
+        return groupFilters.some(filter => row[columnIndex].toLowerCase().includes(filter.label.toLowerCase()));
+      }
+      
     },
 
     getFiltersByGroup(groupName) {

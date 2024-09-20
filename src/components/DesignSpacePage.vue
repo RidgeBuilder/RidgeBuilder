@@ -8,6 +8,7 @@
         </div>
         <div class="dataset-box">
             <h2 class="cnt-title" style="margin-left:10%">DataSet Query</h2>
+            <h5 style="margin-left:10%;margin-top:-1%;color:#50A24F">Notice: After the information is made public, we will display dataset images for which we do not hold the copyright in the form of source links.</h5>
             <div class="query-box"> 
                 <div class="query-panel">
                     <QueryPanel/>
@@ -49,7 +50,7 @@ import ResultPanel from './ResultPanel.vue';
     flex-direction: column;
     align-items: flex-start;
     width:100%;
-    margin-top: 1%;
+    margin-top: -0.5%;
     background-color: #E2E2E2;
     padding-bottom: 2%;
   }

@@ -64,29 +64,25 @@
     flex-direction: column;
     margin: auto;
   }
-  .btn-launch,
-  a.btn-launch-large {
+  .btn-launch {
     width: 40%;
-    background-color: #0770e1;
+    background-color: #50A24F;
     padding: 12px 24px;
     border-radius: 2px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.1s linear, box-shadow 0.1s linear; }
-    .btn-launch, .btn-launch:visited,
-    a.btn-launch-large,
-    a.btn-launch-large:visited {
+    .btn-launch, .btn-launch:visited
+     {
       color: white; }
-    .btn-launch:hover,
-    a.btn-launch-large:hover {
+    .btn-launch:hover
+    {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
       color: white;
-      background-color: #238af8;
+      background-color: #50A24F;
       text-decoration: none; }
-    .btn-launch:focus,
-    a.btn-launch-large:focus {
+    .btn-launch:focus {
       outline: none;
-      box-shadow: 0 0 0 0.2em #0770e1;
+      box-shadow: 0 0 0 0.2em #50A24F;
       text-decoration: none; }
   
   .btn-launch {
@@ -97,18 +93,11 @@
     text-align: center;
     }
 
-    a {
-        color: #238af8;
-        text-decoration: none; }
-        a:visited {
-          color: #0664c8; }
-        a:hover {
-          color: #111;
+    a {text-decoration: none; }
+        
+    a:hover {
           text-decoration: underline; }
-        .social-media-list a:hover {
-          text-decoration: none; }
-          .social-media-list a:hover .username {
-            text-decoration: underline; }
+       
 
   .abstract-container{
     width: 100%;
