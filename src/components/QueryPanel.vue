@@ -235,8 +235,8 @@ export default {
         {
           label: 'OpacityUsage',
           options: [
-            { label: 'Encode Data', value: 'Encode Data' },
-            { label: 'Style', value: 'Style' },
+            { label: 'Encode Data', value: 'encode Data' },
+            { label: 'Style', value: 'style' },
           ],
         },
       ],
@@ -246,13 +246,20 @@ export default {
           options: [
             { label: 'JOY DIVISION album style', value: 'JOY DIVISION album style' },
             { label: 'Book Style', value: 'Book Style' },
+            { label: 'Stylish image', value: 'Stylish image' },
+            { label: 'Black Style', value: 'Black Style' },
+            { label: 'Pink Style', value: 'Pink Style' },
             { label: 'Ridgeline Style', value: 'Ridgeline Style' },
+            { label: 'Categorical colored background', value: 'Categorical colored background' },
           ],
         },
         {
           label: 'Decoration',
           options: [
             { label: 'Detailed visualization', value: 'Detailed visualization' },
+            { label: 'Highlight', value: 'Highlight' },
+            { label: 'Label icon', value: 'Label icon' },
+            { label: 'Additional illustration', value: 'Additional illustration' },
            
           ],
         },
