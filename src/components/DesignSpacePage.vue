@@ -2,14 +2,14 @@
     <div class="designspacepage-container">
       
         <div class="scope-box">
-          <h2 class="cnt-title" >Design Space</h2>
+          <h2 class="cnt-title" style="align-self: flex-start;" >Design Space</h2>
             <a href="/imgs/scope.png" target="_blank">
-                <img width="60%"  src="/imgs/scope.png" alt="">
+                <img width="800px"  src="/imgs/scope.png" alt="">
             </a>
             
         </div>
         <div  class="statistic-bigbox"> 
-          <h2 class="cnt-title" style="margin-left: -52%;">Statistic</h2>
+          <h2 class="cnt-title" style="align-self: flex-start;">Statistic</h2>
           <div class="statistic-box"> 
             <ElementChart/>
             <LayoutChart/>
@@ -70,7 +70,7 @@ import StyleChart from './Statistic/StyleChart.vue';
   }
   .scope-box{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     width:100%;
     margin-top: -0.5%;
