@@ -36,7 +36,7 @@
                 <source src="/usage_senario.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-            <h4>Usage Senario</h4>
+            <h4>Usage Scenario</h4>
         </div>
         <br>
     </div>
